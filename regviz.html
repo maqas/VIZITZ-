@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VISITOR MANAGEMENT SYSTEM</title>
+ <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<link rel="stylesheet" href="" style="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/
+HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</head>
+<style>
+.imgcontainer{
+  object-position: center;
+  text-align: center;
+  background-color: #008080;
+}
+input[type=text], input[type=data], input[type=varchar]{
+    width: 30%;
+    padding:12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border:1px solid #E5E4E2;
+    
+  }
+button:hover {
+    opacity: 0.8;
+}
+button {
+    background-color:#008080;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+div.container{
+  object-position: center;
+  text-align: center;
+  width: auto;
+}
+legend{
+  text-align: center;
+  text-decoration: underline;
+}
+.grid-container{
+ 
+}
+</style>
+  <div class="grid-container">
+      <div class="imgcontainer">
+      <img src="VISITZ.png" width="100" height="100">
+      <h2>VISITOR MANAGEMENT SYSTEM</h2>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">VISITZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="displaydata.php">Records</a>
+                <li class="nav-item">
+              <a class="nav-link" href="logout.php"><span>Logout</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+
+</div>
+
+
+
+<body>
+<br>
+<body>
+  <fieldset>
+     <legend>VISITOR CHECK IN/OUT</legend>
+           <form action="visitordetails.php" method="POST"> 
+                 <div class="container">
+                        <label for="firstname">Vistor firstname:</label>
+                        <input type="text" name="firstname" placeholder="Enter firstname" required>
+                        <br>
+                        <br>
+                          <label for="lastname">Visitor lastname:</label>
+                          <input type="text" placeholder="Enter lastname" name="lastname" required>
+                          <br>
+                          <br>
+                               <label for="currdate">Check_in_date:</label>
+                                    <input type="date" id="currdate" name="currdate"
+                                        value="2018-07-22"
+                                        min="2018-01-01" max="2030-12-31" required/>
+                                   <br>
+                                   <br>
+                                        <label for="checkin">Time-in:</label>
+                                            <input type="varchar"  name="checkin"
+                                           min="8:00" max="18:00" required />
+                                         <span class="hours">Office hours: 8AM to 6PM</span>
+                                              <br>
+                                              <br>
+                                                     <label for="checkout">Time-out:</label>
+                                                         <input type="varchar" name="checkout"
+                                                        min="8:00" max="18:00" />
+                                                     <span class="hours">Office hours: 8AM to 6PM</span>
+                                                   <br>
+                                                   <br>
+                                                       <label for=wherto>Where to:</label>
+                                                        <select name="whereto">
+                                                          <option value="ADMIN">ADMIN</option>
+                                                          <option value="DIRECTOR">DIRECTOR</option>
+                                                          <option value="DR.MUEKE"DR.MUEKE</option>
+                                                          <option value="ICT">ICT</option>
+                                                          <option value="SCI LAB">SCI LIB</option>
+                                                          
+                                                        </select>
+                                                         <br>
+                                                             <div class="clear">
+                                                            <button type="submit" name="submit" >SUBMIT</button>
+                                                            <button type="reset"  value="reset" >RESET</button>
+                                                          </div>
+                                                        </div>
+
+
+                                                      </div>
+
+
+                                                   </form>
+
+                                            </fieldset>
+  
+                                     
+<br>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <script src="js/jquery.dlmenu.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+</body>
+
+
+</html>

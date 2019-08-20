@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VISITOR MANAGEMENT SYSTEM</title>
+<link rel="stylesheet" type="text/css" href="visitordetails.css">
+</head>
+
+
+
+<body>
+	<fieldset>
+		<legend>VISITOR CHECK IN/OUT</legend><img src="VISITZ.png">
+		<form action="visitordetails.php" method="POST"> 
+		<div class="container">
+			<label for="firstname">Vistor firstname:</label>
+			<input type="text" name="firstname" placeholder="Enter firstname" required>
+			<br>
+			<br>
+			<label for="lastname">Visitor lastname:</label>
+			<input type="text" placeholder="Enter lastname" name="lastname" required>
+			<br>
+			<br>
+				 <label for="currdate">Check_in_date:</label>
+        			<input type="date" id="currdate" name="currdate"
+               		value="2018-07-22"
+               		min="2018-01-01" max="2030-12-31" required/>
+       			 <br>
+       			 <br>
+       			<label for="checkin">Time-in:</label>
+       		 <input type="varchar"  name="checkin"
+               min="8:00" max="18:00" required />
+       			 <span class="hours">Office hours: 8AM to 6PM</span>
+               		<br>
+               		<br>
+               <label for="checkout">Time-out:</label>
+       			 <input type="varchar" name="checkout"
+             		  min="8:00" max="18:00" />
+       				 <span class="hours">Office hours: 8AM to 6PM</span>
+       			 <br>
+       			 <br>
+       			 <label for=wherto>Where to:</label>
+       			  <select name="whereto">
+       			  	<option value="ADMIN">ADMIN</option>
+       			  	<option value="DIRECTOR">DIRECTOR</option>
+       			  	<option value="DR.MUEKE"DR.MUEKE</option>
+       			  	<option value="ICT">ICT</option>
+       			  	<option value="SCI LAB">SCI LIB</option>
+       			  	
+       			  </select>
+       			  <br>
+       		 <div class="clear">
+          <button type="submit" name="submit" >SUBMIT</button>
+          <button type="reset"  value="reset" >RESET</button>
+        </div>
+      </div>
+
+
+		</div>
+
+
+	</form>
+
+	</fieldset>
+	
+</body>
+</html>
+
